@@ -1,0 +1,344 @@
+.app-container {
+    display: flex;
+    flex-direction: column;
+    height: 100dvh;
+    overflow: hidden;
+    background-image: url('./assets/meaning_bg.png'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 1vh;
+}
+
+.title {
+    display: inline-block;
+    color: transparent;
+    background-image: var(--title);
+    background-clip: text;
+    -webkit-text-stroke: 1px white;
+    padding: var(--title-padding);
+    font-size: var(--title-size);
+    font-weight: bolder;
+    -webkit-background-clip: text; /* Safari/Chrome prefix */
+}
+
+.topbar-container {
+    padding-block: .5vh;
+}
+
+.topbar-container-group {
+    display: flex;
+    justify-content: center;
+    gap: .5vh;
+    padding: 0;
+}
+
+.topbar-container-group > button {
+    flex: 1;
+    font-size: 1.6vh;
+}
+
+.catastrophe {
+    width: 100%;
+    margin-block: .5vh;
+    margin-bottom: 0;
+}
+
+.player-tab-container {
+    margin-bottom: 1vh;
+}
+
+.player-item-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    display: grid;
+    grid-template-columns:  repeat(3, minmax(100px, 1fr));
+    grid-template-rows:  repeat(2);
+}
+
+.player-item-container > div {
+    padding: .5vh;
+    border: none;
+    color: var(--text);
+    font-size: 2vh;
+    font-weight: 600;
+    text-wrap-mode: nowrap;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.player-item {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+}
+
+.player-item > div {
+    overflow: hidden;
+}
+
+.player-button {
+    background-color: var(--accent-border);
+}
+
+.add-player-button {
+    background-color: var(--accent-border);
+    text-decoration: underline;
+}
+
+.add-player-button:hover {
+    background-color: var(--accent-highlighted);
+}
+
+.add-player-button:active {
+    background-color: var(--accent-border-highlighted);
+}
+
+.player-highlighted {
+    background-color: var(--accent-highlighted);
+}
+
+.cardinput-container {
+    padding-bottom: .5vh;
+}
+
+.autocomplete-container {
+    position: fixed;
+    z-index: 10;
+    width: fit-content;
+    min-width: 32.75vh;
+    margin-left: .25vh;
+    background-color: white;
+}
+
+.autocomplete-item-container {
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+
+.autocomplete-container :hover {
+    color: white;
+    background-color: var(--selected);
+}
+
+.color-pick-button-container {
+    display: flex;
+    gap: 4px;
+    padding-block: 1vh;
+    margin-bottom: 1vh;
+}
+
+.color-pick-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 50px;
+    height: 50px;
+    padding: 1vh;
+    border-radius: 50%;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.dbl-color-picker-header {
+    color: black;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 1vh;
+}
+
+.color-pick-select-container {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 1vh;
+}
+
+.color-pick-select-container > button {
+    min-width: 8vh;
+    border-radius: 1vh;
+}
+
+.player-info-bar {
+    display: flex;
+    justify-content: space-between;
+    gap: 1vh;
+    margin-top: .5vh;
+    padding: 1vh 1vh;
+    background-color: var(--accent);
+    font-size: 2.5vh;
+    overflow: hidden;
+}
+
+.player-info-bar-name {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 40%;
+}
+
+.player-info-bar-score {
+    padding-inline: .5vh;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    white-space: nowrap;
+}
+
+.player-info-button-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: max-content;
+    align-items: stretch;
+    /* width: 20%; */
+    gap: 4px;
+}
+
+.card-item-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 1vh;
+    background-color: var(--card-bg);
+    border: 1px solid var(--card-border);
+}
+
+.delete-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 1.5rem;
+    padding: 2px;
+    aspect-ratio: 1;
+    background-color: var(--delete-bg);
+    cursor: pointer;
+}
+
+.pile-tab-container {
+    display: flex;
+    justify-content: space-between;
+    margin-block: .5vh;
+}
+
+.pile-tab-container > div {
+    flex: 1;
+    padding-block: .5vh;
+}
+
+.tab-unselected {
+    background-color: var(--accent-border);
+}
+
+.tab-selected {
+    background-color: var(--selected)
+}
+
+.add-player-popup-button-container {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.add-player-popup-button-container > button {
+    min-width: 8vh;
+}
+
+.add-player-popup-gene-container {
+    display: flex;
+    justify-content: baseline;
+    gap: 1vh;
+    margin-block: .5vh;
+    padding-block: 1vh;
+    min-width: max-content;
+}
+
+.add-player-popup-gene-container > p {
+    align-self: center;
+    margin: 0;
+    padding: 0;
+}
+
+.add-player-popup-gene-container > button {
+    padding: 0;
+    min-width: 2.5vh;
+    min-height: 2.5vh;
+}
+
+.warning-popup-buttons-container {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2vh;
+}
+
+.add-player-popup-bonus-container > button {
+    padding: 0;
+    min-width: 2.5vh;
+    min-height: 2.5vh;
+}
+
+.warning-popup-buttons-container > button {
+    min-width: 9vh;
+}
+
+.player-name-qr-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1vw;
+    width: 100%;
+}
+
+.qr-popup-container {
+    padding: 1vh;
+    padding-bottom: 0;
+    background-color: white;
+    width: 80%;
+    max-width: 350px;
+    /* height: 100%; */
+}
+
+.qrcode-container {
+    position: relative;
+    aspect-ratio: 1;
+    background-color: white;
+    z-index: 5;
+}
+
+.qrcode-container :hover {
+    cursor: pointer;
+}
+
+.qr-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+
+.qr-group-container {
+    display: flex;
+    justify-content: center;
+    /* width: 10%; */
+}
+
+.qr-scanner-container {
+    display: flex;
+    justify-content: center;
+}
+
+.qr-scanner-img-container {
+    display: flex;
+    width: 20%;
+    background-color: white;
+}
+
+.qr-scanner-img-container > img {
+    width: 100%;
+}
+
+.qr-scanner-button {
+    margin-top: 2vh;
+}

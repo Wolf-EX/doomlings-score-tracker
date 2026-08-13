@@ -1,0 +1,32 @@
+[
+    {
+        "id": 0,
+        "name": "Tommy",
+        "score": 0,
+        "genePool": 4,
+        "traitPile": ["09", "06"],
+        "hand": ["1x", "1t", "1t"],
+        "modifier": [],
+        "catastropheBonus": 2
+    },
+    {
+        "id": 1,
+        "name": "Sarah",
+        "score": 0,
+        "genePool": 6,
+        "traitPile": ["00", "01", "03", "0p", "0q", "0A", "0C", "0C", "08"],
+        "hand": ["0s", "0r", "01", "0g", "0u", "1t"],
+        "modifier": [],
+        "catastropheBonus": 0
+    },
+    {
+        "id": 2,
+        "name": "Lawrence",
+        "genePool": 5,
+        "score": 0,
+        "traitPile": ["0g", "0a", "0m", "0k", "0l", "0y", "0A", "0C", "0R", "0V", "0U"],
+        "hand": [],
+        "modifier": [],
+        "catastropheBonus": 0
+    }
+]

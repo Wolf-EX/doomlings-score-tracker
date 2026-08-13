@@ -1,0 +1,1199 @@
+[
+    {
+        "name": "ECHOLOCATION",
+        "color": ["b"],
+        "type": ["dominant", "effect"],
+        "faceValue": 4,
+        "bonus": null,
+        "effect": null,
+        "code": "00"
+    },
+    {
+        "name": "IMMUNITY",
+        "color": ["b"],
+        "type": ["dominant", "effect", "dropOfLife"],
+        "faceValue": 4,
+        "bonus": {
+            "type": "face",
+            "typeValue": "negative",
+            "location": "traitPile",
+            "target": "self",
+            "amount": 1,
+            "value": 2
+        },
+        "effect": null,
+        "code": "01"
+    },
+    {
+        "name": "TINY",
+        "color": ["b"],
+        "type": ["dominant", "effect", "dropOfLife"],
+        "faceValue": 17,
+        "bonus": {
+            "type": "all",
+            "location": "traitPile",
+            "target": "self",
+            "amount": 1,
+            "value": -1
+        },
+        "effect": null,
+        "code": "02"
+    },
+    {
+        "name": "AUTOMIMICRY (2E)",
+        "color": ["b"],
+        "type": ["effect"],
+        "faceValue": -1,
+        "bonus": null,
+        "effect": null,
+        "code": "03"
+    },
+    {
+        "name": "AUTOMIMICRY (1E)",
+        "color": ["b"],
+        "type": ["effect"],
+        "faceValue": 0,
+        "bonus": null,
+        "effect": null,
+        "code": "04"
+    },
+    {
+        "name": "BLUBBER",
+        "color": ["b"],
+        "type": [],
+        "faceValue": 4,
+        "bonus": null,
+        "effect": null,
+        "code": "05"
+    },
+    {
+        "name": "CHROMAOPHORES",
+        "color": ["b"],
+        "type": ["effect"],
+        "faceValue": 0,
+        "bonus": null,
+        "effect": null,
+        "code": "06"
+    },
+    {
+        "name": "COLD BLOOD",
+        "color": ["b"],
+        "type": ["effect"],
+        "faceValue": 1,
+        "bonus": null,
+        "effect": null,
+        "code": "07"
+    },
+    {
+        "name": "COSTLY SIGNALING",
+        "color": ["b"],
+        "type": ["effect"],
+        "faceValue": -2,
+        "bonus": null,
+        "effect": null,
+        "code": "08"
+    },
+    {
+        "name": "EGG CLUSTERS",
+        "color": ["b"],
+        "type": ["effect", "dropOfLife"],
+        "faceValue": -1,
+        "bonus": {
+            "type": "color",
+            "typeValue": "b",
+            "location": "traitPile",
+            "target": "self",
+            "amount": 1,
+            "value": 1
+        },
+        "effect": null,
+        "code": "09"
+    },
+    {
+        "name": "FLIGHT",
+        "color": ["b"],
+        "type": ["effect"],
+        "faceValue": 2,
+        "bonus": null,
+        "effect": null,
+        "code": "0a"
+    },
+    {
+        "name": "GILLS",
+        "color": ["b"],
+        "type": [],
+        "faceValue": 1,
+        "bonus": null,
+        "effect": null,
+        "code": "0b"
+    },
+    {
+        "name": "IRIDESCENT SCALES",
+        "color": ["b"],
+        "type": ["effect"],
+        "faceValue": 1,
+        "bonus": null,
+        "effect": null,
+        "code": "0c"
+    },
+    {
+        "name": "MIGRATORY",
+        "color": ["b"],
+        "type": [],
+        "faceValue": 2,
+        "bonus": null,
+        "effect": null,
+        "code": "0d"
+    },
+    {
+        "name": "PAINTED SHELL",
+        "color": ["b"],
+        "type": ["effect"],
+        "faceValue": 1,
+        "bonus": null,
+        "effect": null,
+        "code": "0e"
+    },
+    {
+        "name": "REGENERATIVE TISSUE",
+        "color": ["b"],
+        "type": ["effect"],
+        "faceValue": 0,
+        "bonus": null,
+        "effect": null,
+        "code": "0f"
+    },
+    {
+        "name": "SALIVA",
+        "color": ["b"],
+        "type": ["effect"],
+        "faceValue": 1,
+        "bonus": null,
+        "effect": null,
+        "code": "0g"
+    },
+    {
+        "name": "SCUTES",
+        "color": ["b"],
+        "type": ["effect"],
+        "faceValue": 3,
+        "bonus": null,
+        "effect": null,
+        "code": "0h"
+    },
+    {
+        "name": "SELECTIVE MEMORY",
+        "color": ["b"],
+        "type": ["effect"],
+        "faceValue": 0,
+        "bonus": null,
+        "effect": null,
+        "code": "0i"
+    },
+    {
+        "name": "SPINY",
+        "color": ["b"],
+        "type": [],
+        "faceValue": 1,
+        "bonus": null,
+        "effect": null,
+        "code": "0j"
+    },
+    {
+        "name": "SWEAT",
+        "color": ["b"],
+        "type": ["effect"],
+        "faceValue": 2,
+        "bonus": null,
+        "effect": null,
+        "code": "0k"
+    },
+    {
+        "name": "TENTACLES",
+        "color": ["b"],
+        "type": ["effect"],
+        "faceValue": 1,
+        "bonus": null,
+        "effect": null,
+        "code": "0l"
+    },
+    {
+        "name": "HEROIC",
+        "color": ["g"],
+        "type": ["dominant", "effect"],
+        "faceValue": 7,
+        "bonus": null,
+        "effect": null,
+        "code": "0m"
+    },
+    {
+        "name": "PACK BEHAVIOR",
+        "color": ["g"],
+        "type": ["dominant", "effect", "dropOfLife"],
+        "faceValue": 3,
+        "bonus": {
+            "type": "colorPair",
+            "location": "traitPile",
+            "target": "self",
+            "amount": 2,
+            "value": 1
+        },
+        "effect": null,
+        "code": "0n"
+    },
+    {
+        "name": "SYMBIOSIS",
+        "color": ["g"],
+        "type": ["dominant", "effect", "dropOfLife"],
+        "faceValue": 3,
+        "bonus": {
+            "type": "lowestColor",
+            "location": "traitPile",
+            "target": "self",
+            "amount": 1,
+            "value": 2
+        },
+        "effect": null,
+        "code": "0o"
+    },
+    {
+        "name": "APPEALING",
+        "color": ["g"],
+        "type": [],
+        "faceValue": 3,
+        "bonus": null,
+        "effect": null,
+        "code": "0p"
+    },
+    {
+        "name": "BARK",
+        "color": ["g"],
+        "type": [],
+        "faceValue": 2,
+        "bonus": null,
+        "effect": null,
+        "code": "0q"
+    },
+    {
+        "name": "BRANCHES",
+        "color": ["g"],
+        "type": ["effect", "dropOfLife"],
+        "faceValue": 0,
+        "bonus": {
+            "type": "color",
+            "typeValue": "g",
+            "location": "traitPile",
+            "target": "opponent",
+            "amount": 1,
+            "value": 1
+        },
+        "effect": null,
+        "code": "0r"
+    },
+    {
+        "name": "DEEP ROOTS",
+        "color": ["g"],
+        "type": [],
+        "faceValue": 2,
+        "bonus": null,
+        "effect": null,
+        "code": "0s"
+    },
+    {
+        "name": "FECUNDITY",
+        "color": ["g"],
+        "type": ["effect"],
+        "faceValue": 1,
+        "bonus": null,
+        "effect": null,
+        "code": "0t"
+    },
+    {
+        "name": "FORTUNATE (2E)",
+        "color": ["g"],
+        "type": ["effect", "dropOfLife"],
+        "faceValue": null,
+        "bonus": {
+            "type": "all",
+            "location": "hand",
+            "target": "self",
+            "amount": 1,
+            "value": 1
+        },
+        "effect": null,
+        "code": "0u"
+    },
+    {
+        "name": "FORTUNATE (1E)",
+        "color": ["g"],
+        "type": ["effect", "dropOfLife"],
+        "faceValue": 1,
+        "bonus": {
+            "type": "mostColor",
+            "typeValue": "g",
+            "location": "traitPile",
+            "target": "self",
+            "amount": 1,
+            "value": 2
+        },
+        "effect": null,
+        "code": "0v"
+    },
+    {
+        "name": "LEAVES",
+        "color": ["g"],
+        "type": [],
+        "faceValue": 1,
+        "bonus": null,
+        "effect": null,
+        "code": "0w"
+    },
+    {
+        "name": "OVERGROWTH",
+        "color": ["g"],
+        "type": ["effect", "dropOfLife"],
+        "faceValue": -1,
+        "bonus": {
+            "type": "color",
+            "typeValue": "g",
+            "location": "traitPile",
+            "target": "self",
+            "amount": 1,
+            "value": 1
+        },
+        "effect": null,
+        "code": "0x"
+    },
+    {
+        "name": "PHOTOSYNTHESIS",
+        "color": ["g"],
+        "type": ["effect"],
+        "faceValue": 1,
+        "bonus": null,
+        "effect": null,
+        "code": "0y"
+    },
+    {
+        "name": "POLLINATION",
+        "color": ["g"],
+        "type": ["effect", "dropOfLife"],
+        "faceValue": 1,
+        "bonus": {
+            "type": "face",
+            "typeValue": 1,
+            "location": "traitPile",
+            "target": "self",
+            "amount": 1,
+            "value": 1
+        },
+        "effect": null,
+        "code": "0z"
+    },
+    {
+        "name": "PROPAGATION",
+        "color": ["g"],
+        "type": ["effect"],
+        "faceValue": 1,
+        "bonus": null,
+        "effect": null,
+        "code": "0A"
+    },
+    {
+        "name": "RANDOM FERTILIZATION",
+        "color": ["g"],
+        "type": ["effect", "dropOfLife"],
+        "faceValue": null,
+        "bonus": {
+            "type": "size",
+            "location": "genePool",
+            "target": "self",
+            "amount": 1,
+            "value": 1
+        },
+        "effect": null,
+        "code": "0B"
+    },
+    {
+        "name": "SELF-REPLICATING",
+        "color": ["g"],
+        "type": ["effect"],
+        "faceValue": 0,
+        "bonus": null,
+        "effect": null,
+        "code": "0C"
+    },
+    {
+        "name": "SWARM",
+        "color": ["g"],
+        "type": ["effect", "dropOfLife"],
+        "faceValue": null,
+        "bonus": {
+            "type": "name",
+            "typeValue": "SWARM",
+            "location": "traitPile",
+            "target": "all",
+            "amount": 1,
+            "value": 1
+        },
+        "effect": null,
+        "code": "0D"
+    },
+    {
+        "name": "TINY LITTLE MELONS",
+        "color": ["g"],
+        "type": ["effect"],
+        "faceValue": 1,
+        "bonus": null,
+        "effect": null,
+        "code": "0E"
+    },
+    {
+        "name": "TRUNK",
+        "color": ["g"],
+        "type": ["effect"],
+        "faceValue": 1,
+        "bonus": null,
+        "effect": null,
+        "code": "0F"
+    },
+    {
+        "name": "WOODY STEMS",
+        "color": ["g"],
+        "type": ["effect"],
+        "faceValue": 1,
+        "bonus": null,
+        "effect": null,
+        "code": "0G"
+    },
+    {
+        "name": "DENIAL",
+        "color": ["c"],
+        "type": ["dominant", "effect"],
+        "faceValue": 4,
+        "bonus": null,
+        "effect": null,
+        "code": "0H"
+    },
+    {
+        "name": "FAITH",
+        "color": ["c"],
+        "type": ["dominant", "effect", "worldsEnd"],
+        "faceValue": 4,
+        "bonus": null,
+        "effect": {
+            "popup": "double",
+            "type": "colorChange"
+            },
+        "code": "0I"
+    },
+    {
+        "name": "OPTIMISTIC NIHILISM",
+        "color": ["c"],
+        "type": ["dominant", "effect"],
+        "faceValue": 4,
+        "bonus": null,
+        "effect": null,
+        "code": "0J"
+    },
+    {
+        "name": "ALTRUISTIC",
+        "color": ["c"],
+        "type": ["effect", "dropOfLife"],
+        "faceValue": null,
+        "bonus": {
+            "type": "size",
+            "location": "genePool",
+            "target": "self",
+            "amount": 1,
+            "value": 1
+        },
+        "effect": null,
+        "code": "0K"
+    },
+    {
+        "name": "BOREDOM",
+        "color": ["c"],
+        "type": ["effect", "dropOfLife"],
+        "faceValue": null,
+        "bonus": {
+            "type": "type",
+            "typeValue": "effect",
+            "location": "hand",
+            "target": "self",
+            "amount": 1,
+            "value": 1
+        },
+        "effect": null,
+        "code": "0L"
+    },
+    {
+        "name": "BOREDOM",
+        "color": ["c"],
+        "type": ["effect"],
+        "faceValue": 1,
+        "bonus": null,
+        "effect": null,
+        "code": "0M"
+    },
+    {
+        "name": "CONFUSION",
+        "color": ["c"],
+        "type": [],
+        "faceValue": -2,
+        "bonus": null,
+        "effect": null,
+        "code": "0N"
+    },
+    {
+        "name": "DELICIOUS",
+        "color": ["c"],
+        "type": ["effect"],
+        "faceValue": 4,
+        "bonus": null,
+        "effect": null,
+        "code": "0O"
+    },
+    {
+        "name": "DOTING",
+        "color": ["c"],
+        "type": ["effect"],
+        "faceValue": 2,
+        "bonus": null,
+        "effect": null,
+        "code": "0P"
+    },
+    {
+        "name": "ELOQUENCE",
+        "color": ["c"],
+        "type": ["effect"],
+        "faceValue": 1,
+        "bonus": null,
+        "effect": null,
+        "code": "0Q"
+    },
+    {
+        "name": "FEAR",
+        "color": ["c"],
+        "type": [],
+        "faceValue": 1,
+        "bonus": null,
+        "effect": null,
+        "code": "0R"
+    },
+    {
+        "name": "FLATULENCE",
+        "color": ["c"],
+        "type": [],
+        "faceValue": 3,
+        "bonus": null,
+        "effect": null,
+        "code": "0S"
+    },
+    {
+        "name": "GRATITUDE",
+        "color": ["c"],
+        "type": ["effect", "dropOfLife"],
+        "faceValue": null,
+        "bonus": {
+            "type": "diffColors",
+            "location": "traitPile",
+            "target": "self",
+            "amount": 1,
+            "value": 1
+        },
+        "effect": null,
+        "code": "0T"
+    },
+    {
+        "name": "INTROSPECTIVE",
+        "color": ["c"],
+        "type": ["effect"],
+        "faceValue": 1,
+        "bonus": null,
+        "effect": null,
+        "code": "0U"
+    },
+    {
+        "name": "JUST",
+        "color": ["c"],
+        "type": ["effect"],
+        "faceValue": 2,
+        "bonus": null,
+        "effect": null,
+        "code": "0V"
+    },
+    {
+        "name": "LATE",
+        "color": ["c"],
+        "type": ["effect"],
+        "faceValue": 1,
+        "bonus": null,
+        "effect": null,
+        "code": "0W"
+    },
+    {
+        "name": "MINDFUL",
+        "color": ["c"],
+        "type": ["effect", "dropOfLife"],
+        "faceValue": 0,
+        "bonus": {
+            "type": "color",
+            "typeValue": "c",
+            "location": "traitPile",
+            "target": "self",
+            "amount": 1,
+            "value": 1
+        },
+        "effect": null,
+        "code": "0X"
+    },
+    {
+        "name": "MITOCHONDRION",
+        "color": ["c"],
+        "type": ["effect"],
+        "faceValue": 1,
+        "bonus": null,
+        "effect": null,
+        "code": "0Y"
+    },
+    {
+        "name": "MORALITY",
+        "color": ["c"],
+        "type": ["effect"],
+        "faceValue": 5,
+        "bonus": null,
+        "effect": null,
+        "code": "0Z"
+    },
+    {
+        "name": "PREPPER",
+        "color": ["c"],
+        "type": ["effect"],
+        "faceValue": 2,
+        "bonus": null,
+        "effect": null,
+        "code": "10"
+    },
+    {
+        "name": "SAUDADE",
+        "color": ["c"],
+        "type": ["effect", "dropOfLife"],
+        "faceValue": 1,
+        "bonus": {
+            "type": "diffColors",
+            "location": "hand",
+            "target": "self",
+            "amount": 1,
+            "value": 1
+        },
+        "effect": null,
+        "code": "11"
+    },
+    {
+        "name": "SELF-AWARENESS",
+        "color": ["c"],
+        "type": ["effect"],
+        "faceValue": -1,
+        "bonus": null,
+        "effect": null,
+        "code": "12"
+    },
+    {
+        "name": "THE THIRD EYE",
+        "color": ["c"],
+        "type": ["effect"],
+        "faceValue": 0,
+        "bonus": null,
+        "effect": null,
+        "code": "13"
+    },
+    {
+        "name": "CAMOUFLAGE",
+        "color": ["p"],
+        "type": ["dominant", "effect", "dropOfLife"],
+        "faceValue": 1,
+        "bonus": {
+            "type": "all",
+            "location": "hand",
+            "target": "self",
+            "amount": 1,
+            "value": 1
+        },
+        "effect": null,
+        "code": "14"
+    },
+    {
+        "name": "VAMPIRISM",
+        "color": ["p"],
+        "type": ["dominant", "effect"],
+        "faceValue": 3,
+        "bonus": null,
+        "effect": null,
+        "code": "15"
+    },
+    {
+        "name": "VIRAL",
+        "color": ["p"],
+        "type": ["dominant", "effect", "dropOfLife"],
+        "faceValue": 2,
+        "bonus": {
+            "type": "colorAttack",
+            "typeValue": "choice",
+            "location": "traitPile",
+            "amount": 1,
+            "value": -1
+        },
+        "effect": {
+            "popup": "single",
+            "type": "modify"
+        },
+        "code": "16"
+    },
+    {
+        "name": "ADORABLE",
+        "color": ["p"],
+        "type": [],
+        "faceValue": 4,
+        "bonus": null,
+        "effect": null,
+        "code": "17"
+    },
+    {
+        "name": "BIG EARS",
+        "color": ["p"],
+        "type": [],
+        "faceValue": 1,
+        "bonus": null,
+        "effect": null,
+        "code": "18"
+    },
+    {
+        "name": "CLEVER",
+        "color": ["p"],
+        "type": ["effect"],
+        "faceValue": 1,
+        "bonus": null,
+        "effect": null,
+        "code": "19"
+    },
+    {
+        "name": "DIRECTLY REGISTER",
+        "color": ["p"],
+        "type": ["effect"],
+        "faceValue": 1,
+        "bonus": null,
+        "effect": null,
+        "code": "1a"
+    },
+    {
+        "name": "DREAMER",
+        "color": ["p"],
+        "type": ["effect"],
+        "faceValue": 1,
+        "bonus": null,
+        "effect": null,
+        "code": "1b"
+    },
+    {
+        "name": "FINE MOTOR SKILLS",
+        "color": ["p"],
+        "type": [],
+        "faceValue": 2,
+        "bonus": null,
+        "effect": null,
+        "code": "1c"
+    },
+    {
+        "name": "IMPATIENCE",
+        "color": ["p"],
+        "type": ["effect"],
+        "faceValue": 1,
+        "bonus": null,
+        "effect": null,
+        "code": "1d"
+    },
+    {
+        "name": "INVENTIVE",
+        "color": ["p"],
+        "type": ["effect"],
+        "faceValue": 1,
+        "bonus": null,
+        "effect": null,
+        "code": "1e"
+    },
+    {
+        "name": "MEMORY",
+        "color": ["p"],
+        "type": ["effect"],
+        "faceValue": 2,
+        "bonus": null,
+        "effect": null,
+        "code": "1f"
+    },
+    {
+        "name": "NOCTURNAL  ",
+        "color": ["p"],
+        "type": [],
+        "faceValue": 3,
+        "bonus": null,
+        "effect": null,
+        "code": "1g"
+    },
+    {
+        "name": "NOSY",
+        "color": ["p"],
+        "type": ["effect"],
+        "faceValue": 1,
+        "bonus": null,
+        "effect": null,
+        "code": "1h"
+    },
+    {
+        "name": "PARASITIC",
+        "color": ["p"],
+        "type": ["effect"],
+        "faceValue": -2,
+        "bonus": null,
+        "effect": null,
+        "code": "1i"
+    },
+    {
+        "name": "PERSUASIVE",
+        "color": ["p"],
+        "type": ["effect"],
+        "faceValue": 1,
+        "bonus": null,
+        "effect": null,
+        "code": "1j"
+    },
+    {
+        "name": "POISONOUS",
+        "color": ["p"],
+        "type": ["effect"],
+        "faceValue": 2,
+        "bonus": null,
+        "effect": null,
+        "code": "1k"
+    },
+    {
+        "name": "SELFISH",
+        "color": ["p"],
+        "type": ["effect"],
+        "faceValue": 1,
+        "bonus": null,
+        "effect": null,
+        "code": "1l"
+    },
+    {
+        "name": "SNEAKY",
+        "color": ["p"],
+        "type": ["effect"],
+        "faceValue": 2,
+        "bonus": null,
+        "effect": null,
+        "code": "1m"
+    },
+    {
+        "name": "STICKY SECRETIONS",
+        "color": ["p"],
+        "type": ["effect", "dropOfLife"],
+        "faceValue": -1,
+        "bonus": {
+            "type": "color",
+            "typeValue": "p",
+            "location": "traitPile",
+            "target": "self",
+            "amount": 1,
+            "value": 1
+        },
+        "effect": null,
+        "code": "1n"
+    },
+    {
+        "name": "SUPER SPREADER",
+        "color": ["p"],
+        "type": ["effect"],
+        "faceValue": 2,
+        "bonus": null,
+        "effect": null,
+        "code": "1o"
+    },
+    {
+        "name": "TEETH",
+        "color": ["p"],
+        "type": ["effect"],
+        "faceValue": 1,
+        "bonus": null,
+        "effect": null,
+        "code": "1p"
+    },
+    {
+        "name": "TELEKINETIC",
+        "color": ["p"],
+        "type": ["effect"],
+        "faceValue": 1,
+        "bonus": null,
+        "effect": null,
+        "code": "1q"
+    },
+    {
+        "name": "VENOMOUS",
+        "color": ["p"],
+        "type": ["effect"],
+        "faceValue": -2,
+        "bonus": null,
+        "effect": null,
+        "code": "1r"
+    },
+    {
+        "name": "APEX PREDATOR",
+        "color": ["r"],
+        "type": ["dominant", "effect", "dropOfLife"],
+        "faceValue": 4,
+        "bonus": {
+            "type": "most",
+            "typeValue": "",
+            "location": "traitPile",
+            "target": "self",
+            "amount": 1,
+            "value": 4
+        },
+        "effect": null,
+        "code": "1s"
+    },
+    {
+        "name": "HYPER-INTELLIGENCE",
+        "color": ["r"],
+        "type": ["dominant", "effect"],
+        "faceValue": 4,
+        "bonus": null,
+        "effect": null,
+        "code": "1t"
+    },
+    {
+        "name": "SENTIENCE",
+        "color": ["r"],
+        "type": ["dominant", "effect"],
+        "faceValue": 2,
+        "bonus": {
+            "type": "color",
+            "typeValue": "choice",
+            "location": "traitPile",
+            "target": "self",
+            "amount": 1,
+            "value": 1
+        },
+        "effect": {
+            "popup": "single",
+            "type": "colorChoose"
+        },
+        "code": "1v"
+    },
+    {
+        "name": "ANTLERS",
+        "color": ["r"],
+        "type": [],
+        "faceValue": 3,
+        "bonus": null,
+        "effect": null,
+        "code": "1w"
+    },
+    {
+        "name": "BAD",
+        "color": ["r"],
+        "type": ["effect"],
+        "faceValue": 1,
+        "bonus": null,
+        "effect": null,
+        "code": "1x"
+    },
+    {
+        "name": "BRAVE",
+        "color": ["r"],
+        "type": ["effect"],
+        "faceValue": 1,
+        "bonus": {
+            "type": "type",
+            "typeValue": "dominant",
+            "location": "hand",
+            "target": "self",
+            "amount": 1,
+            "value": 2
+        },
+        "effect": null,
+        "code": "1y"
+    },
+    {
+        "name": "BRAVE",
+        "color": ["r"],
+        "type": ["effect"],
+        "faceValue": 2,
+        "bonus": null,
+        "effect": null,
+        "code": "1z"
+    },
+    {
+        "name": "BRUTE STRENGTH",
+        "color": ["r"],
+        "type": ["effect"],
+        "faceValue": 4,
+        "bonus": null,
+        "effect": null,
+        "code": "1A"
+    },
+    {
+        "name": "ENDURANCE",
+        "color": ["r"],
+        "type": ["effect"],
+        "faceValue": 1,
+        "bonus": null,
+        "effect": null,
+        "code": "1B"
+    },
+    {
+        "name": "FANGS",
+        "color": ["r"],
+        "type": [],
+        "faceValue": 1,
+        "bonus": null,
+        "effect": null,
+        "code": "1C"
+    },
+    {
+        "name": "FIRE SKIN",
+        "color": ["r"],
+        "type": [],
+        "faceValue": 3,
+        "bonus": null,
+        "effect": null,
+        "code": "1D"
+    },
+    {
+        "name": "HEAT VISION",
+        "color": ["r"],
+        "type": ["effect"],
+        "faceValue": -1,
+        "bonus": {
+            "type": "color",
+            "typeValue": "r",
+            "location": "traitPile",
+            "target": "self",
+            "amount": 1,
+            "value": 1
+        },
+        "effect": null,
+        "code": "1E"
+    },
+    {
+        "name": "HOT TEMPER",
+        "color": ["r"],
+        "type": ["effect"],
+        "faceValue": 2,
+        "bonus": null,
+        "effect": null,
+        "code": "1F"
+    },
+    {
+        "name": "KIDNEY",
+        "color": ["r"],
+        "type": ["effect"],
+        "faceValue": null,
+        "bonus": {
+            "type": "name",
+            "typeValue": "KIDNEY",
+            "location": "traitPile",
+            "target": "self",
+            "amount": 1,
+            "value": 1
+        },
+        "effect": null,
+        "code": "1G"
+    },
+    {
+        "name": "QUICK",
+        "color": ["r"],
+        "type": [],
+        "faceValue": 2,
+        "bonus": null,
+        "effect": null,
+        "code": "1H"
+    },
+    {
+        "name": "RECKLESS",
+        "color": ["r"],
+        "type": ["effect"],
+        "faceValue": 3,
+        "bonus": null,
+        "effect": null,
+        "code": "1I"
+    },
+    {
+        "name": "RETRACTABLE CLAWS",
+        "color": ["r"],
+        "type": ["effect"],
+        "faceValue": 5,
+        "bonus": null,
+        "effect": null,
+        "code": "1J"
+    },
+    {
+        "name": "STONE SKIN",
+        "color": ["r"],
+        "type": ["effect"],
+        "faceValue": 2,
+        "bonus": null,
+        "effect": null,
+        "code": "1K"
+    },
+    {
+        "name": "TERRITORIAL",
+        "color": ["r"],
+        "type": ["effect"],
+        "faceValue": 1,
+        "bonus": null,
+        "effect": null,
+        "code": "1L"
+    },
+    {
+        "name": "VORACIOUS",
+        "color": ["r"],
+        "type": ["effect"],
+        "faceValue": 2,
+        "bonus": null,
+        "effect": null,
+        "code": "1M"
+    },
+    {
+        "name": "WARM BLOOD",
+        "color": ["r"],
+        "type": ["effect"],
+        "faceValue": -1,
+        "bonus": null,
+        "effect": null,
+        "code": "1N"
+    },
+    {
+        "name": "FORTUNATE (3E)",
+        "color": ["c"],
+        "type": ["effect", "dropOfLife"],
+        "faceValue": 0,
+        "bonus": {
+            "type": "all",
+            "location": "hand",
+            "target": "self",
+            "amount": 1,
+            "value": 1
+        },
+        "effect": null,
+        "code": "1O"
+    },
+    {
+        "name": "AUTOMIMICRY (3E)",
+        "color": ["b"],
+        "type": ["effect"],
+        "faceValue": -1,
+        "bonus": null,
+        "effect": null,
+        "code": "1P"
+    }
+]

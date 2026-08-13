@@ -1,0 +1,170 @@
+[
+    {
+        "name": "None",
+        "bonus": null,
+        "id": "00"
+    },
+    {
+        "name": "THE BIG ONE (2E)",
+        "bonus": {
+            "type": "missingColor",
+            "location": "traitPile",
+            "target": "self",
+            "amount": 1,
+            "value": 1
+        },
+        "id": "01"
+    },
+    {
+        "name": "THE BIG ONE (3E)",
+        "bonus": {
+            "type": "colorsCount",
+            "location": "traitPile",
+            "target": "self",
+            "amount": 4,
+            "value": -4
+        },
+        "id": "0i"
+    },
+    {
+        "name": "DEUS EX MACHINA",
+        "bonus": {
+            "type": "bonusValue",
+            "amount": 1,
+            "value": 1
+        },
+        "id": "02"
+    },
+    {
+        "name": "OVERPOPULATION",
+        "bonus": {
+            "type": "fewest",
+            "location": "traitPile",
+            "amount": 1,
+            "value": 5
+        },
+        "id": "04"
+    },
+    {
+        "name": "OVERPOPULATION (2E)",
+        "bonus": {
+            "type": "fewest",
+            "location": "traitPile",
+            "amount": 1,
+            "value": 4
+        },
+        "id": "05"
+    },
+    {
+        "name": "GLACIAL MELTDOWN",
+        "bonus": null,
+        "id": "06"
+    },
+    {
+        "name": "ICE AGE",
+        "bonus": {
+            "type": "color",
+            "typeValue": "r",
+            "location": "traitPile",
+            "target": "self",
+            "amount": 1,
+            "value": -1
+        },
+        "id": "07"
+    },
+    {
+        "name": "MEGA TSUNAMI",
+        "bonus": null,
+        "id": "08"
+    },
+    {
+        "name": "THE FOUR HORSEMEN",
+        "bonus": null,
+        "id": "09"
+    },
+    {
+        "name": "GREY GOO",
+        "bonus": {
+            "type": "most",
+            "location": "traitPile",
+            "amount": 1,
+            "value": 5
+        },
+        "id": "0a"
+    },
+    {
+        "name": "MASS EXTINCTION",
+        "bonus": null,
+        "id": "0b"
+    },
+    {
+        "name": "NUCLEAR WINTER",
+        "bonus": null,
+        "id": "0c"
+    },
+    {
+        "name": "SOLAR FLARE",
+        "bonus": {
+            "type": "color",
+            "typeValue": "p",
+            "location": "traitPile",
+            "target": "self",
+            "amount": 1,
+            "value": -1
+        },
+        "id": "0d"
+    },
+    {
+        "name": "SUPER VOLCANO",
+        "bonus": {
+            "type": "color",
+            "typeValue": "b",
+            "location": "traitPile",
+            "target": "self",
+            "amount": 1,
+            "value": -1
+        },
+        "id": "0e"
+    },
+    {
+        "name": "AI TAKEOVER",
+        "bonus": {
+            "type": "colorBlock",
+            "typeValue": "c",
+            "location": "traitPile",
+            "target": "all",
+            "amount": 1,
+            "value": 2
+        },
+        "id": "0j"
+    },
+    {
+        "name": "AI TAKEOVER (2E)",
+        "bonus": {
+            "type": "colorBlock2",
+            "typeValue": "c",
+            "location": "traitPile",
+            "target": "all",
+            "amount": 1,
+            "value": 2
+        },
+        "id": "0f"
+    },
+    {
+        "name": "PULSE EVENT",
+        "bonus": null,
+        "id": "0g"
+    },
+    {
+        "name": "RETROVIRUS",
+        "bonus": {
+            "type": "color",
+            "typeValue": "g",
+            "location": "traitPile",
+            "target": "self",
+            "amount": 1,
+            "value": -1
+        },
+        "id": "0h"
+    }
+]

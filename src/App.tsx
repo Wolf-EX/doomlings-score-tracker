@@ -1,0 +1,102 @@
+import { useEffect, useState } from 'react';
+import './App.css';
+import { type Player, type Catastrophe, type ModifierType } from './data/types';
+import PlayerTab from './components/PlayerTab';
+import CardList from './components/CardList';
+import CardInput from './components/CardInput';
+import { findCatastrophe, findTrait } from './util/util';
+import { checkScore } from './util/score';
+import PlayerInfoBar from './components/PlayerInfoBar';
+import PileTab from './components/PileTab';
+import CatastropheButton from './components/CatastropheButton';
+
+export default function App() {
+  const [players, setPlayers] = useState<Player[] | []>([]);
+  const [selectedPlayer, setSelectedPlayer] = useState<number>(0);
+  const [selectedPile, setSelectedPile] = useState<number>(0);
+  const [selectedCatastrophe, setSelectedCatastrophe] = useState<Catastrophe>(() => findCatastrophe("00"));
+  const [traitList, setTraitList] = useState<string[]>([]);
+  const [discardPile, setDiscardPile] = useState<string[]>([]);  
+
+  useEffect(() => {
+    setPlayers([]);
+    checkScore([], selectedCatastrophe);
+  }, []);
+
+  useEffect(() => {
+    // move this to function that selects catastrophe instead(updates after page redraws)
+    if(players.length > 0) {
+      checkScore(players, selectedCatastrophe);
+    }
+  }, [selectedCatastrophe, players]);
+
+  useEffect(() => {
+    setTraitList(() => players.length > 0 ? getTraitPile() : []);
+  }, [players, selectedPlayer, selectedPile, discardPile]);
+
+
+
+  function getTraitPile(): string[] {
+    switch(selectedPile) {
+      case 0:
+        return players[selectedPlayer].traitPile;
+      case 1:
+        return players[selectedPlayer].hand;
+      case 2:
+        return discardPile;
+      default : return [];
+    }
+  }
+
+  function removeTrait(list: string[] | null, index: number) {
+    if(list) {
+      const removingTraitId: string = list.splice(index, 1)[0];
+      const removingTrait = findTrait(removingTraitId.slice(0, 2));
+      if(removingTraitId.length > 2) {
+          const modifier = removingTrait?.effect?.type;
+          if(modifier === "colorChange") {
+              const fromColor = removingTraitId.slice(2, 3);
+              const toColor = removingTraitId.slice(3, 4);
+              const index: number = players[selectedPlayer].modifier.findIndex((e: ModifierType) => {
+                /* if(typeof e === "object" && typeof e.type === "string" && typeof e.from === "string" && typeof e.to === "string") {
+                  return (e.type === "color" && e.from === fromColor && e.to == toColor)
+                } */
+                return (typeof e === "object" && e.type === "color" && e.from === fromColor && e.to == toColor);
+              })
+              players[selectedPlayer].modifier.splice(index, 1);
+          }
+      }
+
+      setPlayers([...players]);
+      checkScore(players, selectedCatastrophe);
+    }
+  }
+
+  return (
+    <div className='app-container'>
+      <header>
+        <p className='title'>Doomlings Score Tracker</p>
+      </header>
+      <CatastropheButton players={players} selectedCatastrophe={selectedCatastrophe} setSelectedCatastrophe={setSelectedCatastrophe} /> 
+      <main>
+        <CardInput
+          players={players}
+          setPlayers={setPlayers}
+          selectedPlayer={selectedPlayer}
+          selectedCatastrophe={selectedCatastrophe}
+          setDiscardPile={setDiscardPile}
+        />
+        <PlayerTab 
+        players={players}
+        setPlayers={setPlayers}
+        selectedPlayer={selectedPlayer}
+        setSelectedPlayer={setSelectedPlayer}
+        selectedCatastrophe={selectedCatastrophe}
+      />
+        <PlayerInfoBar players={players} setPlayers={setPlayers} selectedPlayer={selectedPlayer} setSelectedPlayer={setSelectedPlayer} />
+        <PileTab selectedPile={selectedPile} setSelectedPile={setSelectedPile}/>
+        <CardList traitList={traitList} removeFn={removeTrait} />
+      </main>
+    </div>
+  );
+}
