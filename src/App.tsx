@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import './App.css';
 import { type Player, type Catastrophe, type ModifierType } from './data/types';
 import PlayerTab from './components/PlayerTab';
@@ -12,11 +12,14 @@ import CatastropheButton from './components/CatastropheButton';
 
 export default function App() {
   const [players, setPlayers] = useState<Player[] | []>([]);
+  const [selectdPlayerName, setSelectedPlayerName] = useState<string>("");
   const [selectedPlayer, setSelectedPlayer] = useState<number>(0);
   const [selectedPile, setSelectedPile] = useState<number>(0);
   const [selectedCatastrophe, setSelectedCatastrophe] = useState<Catastrophe>(() => findCatastrophe("00"));
   const [traitList, setTraitList] = useState<string[]>([]);
-  const [discardPile, setDiscardPile] = useState<string[]>([]);  
+  const [discardPile, setDiscardPile] = useState<string[]>([]);
+
+  const uid = useRef(0);
 
   useEffect(() => {
     setPlayers([]);
@@ -87,13 +90,25 @@ export default function App() {
           setDiscardPile={setDiscardPile}
         />
         <PlayerTab 
-        players={players}
-        setPlayers={setPlayers}
-        selectedPlayer={selectedPlayer}
-        setSelectedPlayer={setSelectedPlayer}
-        selectedCatastrophe={selectedCatastrophe}
-      />
-        <PlayerInfoBar players={players} setPlayers={setPlayers} selectedPlayer={selectedPlayer} setSelectedPlayer={setSelectedPlayer} />
+          players={players}
+          setPlayers={setPlayers}
+          selectedPlayer={selectedPlayer}
+          setSelectedPlayer={setSelectedPlayer}
+          selectedPlayerName={selectdPlayerName}
+          setSelectedPlayerName={setSelectedPlayerName}
+          selectedCatastrophe={selectedCatastrophe}
+          uId={uid}
+        />
+        <PlayerInfoBar
+          players={players}
+          setPlayers={setPlayers}
+          selectedPlayer={selectedPlayer}
+          setSelectedPlayer={setSelectedPlayer}
+          selectedPlayerName={selectdPlayerName}
+          setSelectedPlayerName={setSelectedPlayerName}
+          selectedCatastrophe={selectedCatastrophe}
+          uId={uid}
+        />
         <PileTab selectedPile={selectedPile} setSelectedPile={setSelectedPile}/>
         <CardList traitList={traitList} removeFn={removeTrait} />
       </main>
