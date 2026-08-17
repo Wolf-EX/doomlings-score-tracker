@@ -22,18 +22,18 @@
     -webkit-background-clip: text; /* Safari/Chrome prefix */
 }
 
-.topbar-container {
+.addtrait-container {
     padding-block: .5vh;
 }
 
-.topbar-container-group {
+.addtrait-container-group {
     display: flex;
     justify-content: center;
     gap: .5vh;
     padding: 0;
 }
 
-.topbar-container-group > button {
+.addtrait-container-group > button {
     flex: 1;
     font-size: 1.6vh;
 }

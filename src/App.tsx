@@ -12,7 +12,7 @@ import CatastropheButton from './components/CatastropheButton';
 
 export default function App() {
   const [players, setPlayers] = useState<Player[] | []>([]);
-  const [selectdPlayerName, setSelectedPlayerName] = useState<string>("");
+  const [selectedPlayerName, setSelectedPlayerName] = useState<string>("");
   const [selectedPlayer, setSelectedPlayer] = useState<number>(0);
   const [selectedPile, setSelectedPile] = useState<number>(0);
   const [selectedCatastrophe, setSelectedCatastrophe] = useState<Catastrophe>(() => findCatastrophe("00"));
@@ -36,8 +36,6 @@ export default function App() {
   useEffect(() => {
     setTraitList(() => players.length > 0 ? getTraitPile() : []);
   }, [players, selectedPlayer, selectedPile, discardPile]);
-
-
 
   function getTraitPile(): string[] {
     switch(selectedPile) {
@@ -82,19 +80,13 @@ export default function App() {
       </header>
       <CatastropheButton players={players} selectedCatastrophe={selectedCatastrophe} setSelectedCatastrophe={setSelectedCatastrophe} /> 
       <main>
-        <CardInput
-          players={players}
-          setPlayers={setPlayers}
-          selectedPlayer={selectedPlayer}
-          selectedCatastrophe={selectedCatastrophe}
-          setDiscardPile={setDiscardPile}
-        />
+        
         <PlayerTab 
           players={players}
           setPlayers={setPlayers}
           selectedPlayer={selectedPlayer}
           setSelectedPlayer={setSelectedPlayer}
-          selectedPlayerName={selectdPlayerName}
+          selectedPlayerName={selectedPlayerName}
           setSelectedPlayerName={setSelectedPlayerName}
           selectedCatastrophe={selectedCatastrophe}
           uId={uid}
@@ -104,10 +96,17 @@ export default function App() {
           setPlayers={setPlayers}
           selectedPlayer={selectedPlayer}
           setSelectedPlayer={setSelectedPlayer}
-          selectedPlayerName={selectdPlayerName}
+          selectedPlayerName={selectedPlayerName}
           setSelectedPlayerName={setSelectedPlayerName}
           selectedCatastrophe={selectedCatastrophe}
           uId={uid}
+        />
+        <CardInput
+          players={players}
+          setPlayers={setPlayers}
+          selectedPlayer={selectedPlayer}
+          selectedCatastrophe={selectedCatastrophe}
+          setDiscardPile={setDiscardPile}
         />
         <PileTab selectedPile={selectedPile} setSelectedPile={setSelectedPile}/>
         <CardList traitList={traitList} removeFn={removeTrait} />

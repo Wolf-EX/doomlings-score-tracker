@@ -169,9 +169,9 @@ export default function CardInput({players, setPlayers, selectedPlayer, setDisca
                     onCancel={() => setShowDoubleColorPicker(false)}
                 />
             }
-            <div className="topbar-container">
+            <div className="addtrait-container">
                 <h2>Add Traits</h2>
-                <div className="topbar-container-group">
+                <div className="addtrait-container-group">
                     <button onClick={() => addTrait(0)}>Add to traits</button>
                     <button onClick={() => addTrait(1)}>Add to hand</button>
                     <button onClick={() => addTrait(2)}>Add to discard</button>

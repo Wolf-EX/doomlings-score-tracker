@@ -26,6 +26,10 @@ export default function PlayerTab({
     
     const [showAddPlayer, setShowAddPlayer] = useState<Boolean>(false);
 
+    function onSelectPlayer(index: number) {
+        setSelectedPlayer(index);
+    }
+
     return (
         <div className="player-tab-container">
             {
@@ -48,7 +52,7 @@ export default function PlayerTab({
                     <div 
                         className={selectedPlayer === index ? 'player-highlighted' : 'player-button'}
                         key={player.id}
-                        onClick={() => setSelectedPlayer(index)}
+                        onClick={() => onSelectPlayer(index)}
                     >
                         <div className="player-item">
                             <div>{player.name} </div>

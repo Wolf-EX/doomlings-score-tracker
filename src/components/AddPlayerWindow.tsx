@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import qrlogo from "../assets/qr-icon.png";
 import type { Catastrophe, Player } from "../data/types";
 import Popup from "./Popup";
@@ -34,6 +34,19 @@ export default function AddPlayerWindow({
     const [genePool, setGenePool] = useState<number>(5);
     const [catastropheBonus, setCatastropheBonus] = useState<number>(0);
     const [useQr, setUseQr] = useState<Boolean>(false);
+
+    useEffect(() => {
+        const player: Player | null = selectedPlayer !== undefined ? players[selectedPlayer] : null;
+        if(edit && player) {
+            setSelectedPlayerName(player.name);
+            setGenePool(player.genePool);
+            setCatastropheBonus(player.catastropheBonus);
+        } else {
+            setSelectedPlayerName("");
+            setGenePool(5);
+            setCatastropheBonus(0);
+        }
+    }, [showAddPlayer])
 
     function hidePlayerPopup() {
         setSelectedPlayerName("");
@@ -98,7 +111,8 @@ export default function AddPlayerWindow({
             }
 
             // Checks if duplicate playername and adds unique number to end of it
-            const playerNames: string[] = players.map(p => p.name);
+            const playerNames: string[] = players.map(p => p.name).filter(n => n !== selectedPlayerName);
+
             let index: number = 0;
             let name: string = _playerData.name;
 
