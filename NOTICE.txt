@@ -1,0 +1,16 @@
+Doomlings Fan Score Tracker
+Copyright 2026 Wolf-EX
+
+This product includes software developed by Wolf-EX
+and contributors to the Doomlings Fan Score Tracker project.
+
+This product includes software from the following third-party projects:
+- Html5-QRCode (Licensed under the Apache License 2.0)
+- react-qr-code (Licensed under the MIT License)
+
+---
+DISCLAIMER:
+This is an unofficial, fan-made companion tool for the card game Doomlings. 
+All card names, text, game mechanics, and associated intellectual property 
+belong entirely to Doomlings, LLC. This project is not officially affiliated 
+with, endorsed by, or sponsored by the creators of Doomlings.
