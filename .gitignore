@@ -13,8 +13,11 @@ dist-ssr
 *.local
 
 # Dev test files
-dummyDiscard.json
-dummyPlayer.json
+src\data\dummyDiscard.json
+src\data\dummyPlayer.json
+
+#assets
+src\assets\test-qr-code.bmp
 
 # Editor directories and files
 .vscode/*
