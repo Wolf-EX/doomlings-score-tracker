@@ -182,8 +182,8 @@
 
 .player-info-bar-score {
     padding-inline: .5vh;
-    border-left: 2px solid white;
-    border-right: 2px solid white;
+    /* border-left: 2px solid white;
+    border-right: 2px solid white; */
     white-space: nowrap;
 }
 
