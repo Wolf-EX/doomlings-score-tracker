@@ -1,23 +1,27 @@
 :root {
   /* colors */
   --title: linear-gradient(to right, red, green, blue, purple);
-  --text: #6b6375;
+  --text: #000000;
   --text-h: #08060d;
-  --bg: #11203c;
+  --bg: #c2d8ff;
   --border: #e5e4e7;
   --code-bg: #f4f3ec;
-  --accent: #aa3bff;
-  --accent-bg: #aa3bff1a;
-  --accent-border: #aa3bff80;
-  --delete-bg: #f4f3ec80;
+  --accent: #ffc907;
+  --accent-highlighted: #fff700ba;
+  --accent-border: #c9a412e1;
+  --accent-bg: #ff6e0de7;
+  --delete-bg: #ffe32d;
   --window-bg: #f4f3ecd9;
-  --list-bg: #6778cb;
-  --card-bg: #9633fa;
-  --card-border: #8000ff;
+  --selected: #ffff5a;
+  --list-bg: #cbb267;
+  --card-bg: #fac833;
+  --card-border: #ffdd00;
   
   --sans: sans-serif, system-ui, 'Segoe UI', Roboto;
   --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
   --mono: ui-monospace, Consolas, monospace;
+
+  --bg-url: url('./assets/sun-bg.jpg');
   
   --title-size: 7.5vw;
   --title-padding: 2vh;
@@ -98,15 +102,17 @@
     --code-bg: #1f2028;
     --accent: #a250f5;
     --accent-highlighted: #8000ff;
-    --accent-bg: #c084fc26;
+    --accent-bg: #9122ffde;
     --accent-border: #c084fc80;
     --accent-border-highlighted: #9328fe80;
     --delete-bg: #531b97;
     --window-bg: #5949a0e6;
     --selected: #00a6ff;
-    /* --list-bg: #6778cb; */
+    --list-bg: #6778cb;
     --card-bg: #9633fa;
     --card-border: #8000ff;
+
+    --bg-url: url('./assets/meaning_bg.png'); 
   }
 }
 

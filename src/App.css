@@ -3,7 +3,7 @@
     flex-direction: column;
     height: 100dvh;
     overflow: hidden;
-    background-image: url('./assets/meaning_bg.png'); 
+    background-image: var(--bg-url); 
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -232,6 +232,10 @@
 
 .tab-selected {
     background-color: var(--selected)
+}
+
+.add-player-popup-container {
+    background-color: var(--accent-bg);
 }
 
 .add-player-popup-button-container {
