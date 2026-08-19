@@ -511,7 +511,7 @@
         "code": "0K"
     },
     {
-        "name": "BOREDOM",
+        "name": "BOREDOM (2E)",
         "color": ["c"],
         "type": ["effect", "dropOfLife"],
         "faceValue": null,
@@ -527,7 +527,7 @@
         "code": "0L"
     },
     {
-        "name": "BOREDOM",
+        "name": "BOREDOM (1E)",
         "color": ["c"],
         "type": ["effect"],
         "faceValue": 1,
@@ -1008,7 +1008,7 @@
         "code": "1x"
     },
     {
-        "name": "BRAVE",
+        "name": "BRAVE (2E)",
         "color": ["r"],
         "type": ["effect"],
         "faceValue": 1,
@@ -1024,7 +1024,7 @@
         "code": "1y"
     },
     {
-        "name": "BRAVE",
+        "name": "BRAVE (1E)",
         "color": ["r"],
         "type": ["effect"],
         "faceValue": 2,

@@ -15,7 +15,6 @@ type Props = {
 };
 
 export default function CardInput({players, setPlayers, selectedPlayer, setDiscardPile, selectedCatastrophe}: Props) {
-
     const [cardName, setCardName] = useState<string>('');
     const [currentTrait, setCurrentTrait] = useState<Trait>();
     const [autoCompleteList, setAutoCompleteList] = useState<string[]>([]);

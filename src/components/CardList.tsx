@@ -7,7 +7,6 @@ type Props = {
 };
 
 export default function CardList({traitList, removeFn}: Props) {
-
     return (
         <ul className='scrollable'>
         {

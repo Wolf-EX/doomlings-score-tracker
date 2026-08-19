@@ -23,7 +23,6 @@ export default function PlayerTab({
     selectedCatastrophe,
     uId
 }: Props) {
-    
     const [showAddPlayer, setShowAddPlayer] = useState<Boolean>(false);
 
     function onSelectPlayer(index: number) {

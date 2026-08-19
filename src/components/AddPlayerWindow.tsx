@@ -30,7 +30,6 @@ export default function AddPlayerWindow({
     edit,
     uId
 }: Props) {
-    
     const [genePool, setGenePool] = useState<number>(5);
     const [catastropheBonus, setCatastropheBonus] = useState<number>(0);
     const [useQr, setUseQr] = useState<Boolean>(false);
@@ -103,7 +102,7 @@ export default function AddPlayerWindow({
                 "catastropheBonus": catastropheBonus
             }
 
-            if(selectedPlayer) {
+            if(selectedPlayer !== undefined) {
                 _playerData.id = players[selectedPlayer].id;
                 _playerData.traitPile = players[selectedPlayer].traitPile;
                 _playerData.hand = players[selectedPlayer].hand;

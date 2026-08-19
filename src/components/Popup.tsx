@@ -5,7 +5,6 @@ type Props = {
 }
 
 export default function Popup({children, className, onClick}: Props) {
-
     function onClickFn() {
         if(onClick) {
             onClick();

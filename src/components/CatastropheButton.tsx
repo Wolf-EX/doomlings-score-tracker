@@ -10,7 +10,6 @@ type Props = {
 };
 
 export default function CatastropheButton({players, selectedCatastrophe, setSelectedCatastrophe}: Props) {
-
     const [showCatastropheList, setShowCatastropheList] = useState<boolean>(false);
     const [catastropheName, setCatastropheName] = useState<string>("None");
 

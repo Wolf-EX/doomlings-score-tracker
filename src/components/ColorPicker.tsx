@@ -12,7 +12,6 @@ type Props = {
 };
 
 export default function ColorPicker({title, double=false, doubleTitle="", onSelect, onAdd, onCancel, show=true, selectedColor}: Props) {
-
     function onColorButtonClick(row: number, column: number): void {
         onSelect(row, column);
     }

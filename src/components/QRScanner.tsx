@@ -13,7 +13,6 @@ type Props = {
 }
 
 export default function QRScanner({fps, qrbox, aspectRatio, disableFlip, qrCodeSuccessCallback, verbose}: Props) {
-
     const scannerRef: React.RefObject<null | Html5QrcodeScanner> = useRef(null);
 
     const qrcodeRegionId = "html5qr-code-full-region";

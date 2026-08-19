@@ -28,7 +28,6 @@ export default function PlayerInfoBar({
     selectedCatastrophe,
     uId
 }: Props) {
-
     const [showDeleteWarning, setShowDeleteWarning] = useState<Boolean>(false);
     const [showQRCode, setShowQRCode] = useState<boolean>(false);
     const [showAddPlayer, setShowAddPlayer] = useState<Boolean>(false);
