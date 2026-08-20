@@ -76,7 +76,7 @@ export default function App() {
   return (
     <div className='app-container'>
       <header>
-        <p className='title'>Doomlings Score Tracker</p>
+        <p className='title'>Doomlings Score Calculator</p>
       </header>
       <CatastropheButton players={players} selectedCatastrophe={selectedCatastrophe} setSelectedCatastrophe={setSelectedCatastrophe} /> 
       <main>

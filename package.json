@@ -1,6 +1,6 @@
 {
-  "homepage": "https://wolf-ex.github.io/doomlings-score-tracker",
-  "name": "doomlings-score-tracker",
+  "homepage": "https://wolf-ex.github.io/doomlings-score-calculator",
+  "name": "doomlings-score-calculator",
   "private": true,
   "version": "0.0.0",
   "type": "module",
