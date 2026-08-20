@@ -48,7 +48,6 @@ export default function App() {
   }, [players, selectedPlayer, selectedPile, discardPile]);
 
   function resizeTraitList(): void {
-    console.log("resizeTraitList");
     const scrollWindow: HTMLElement | null = document.getElementById("scrollWindow");
     if(scrollWindow) {
       const rect = scrollWindow.getBoundingClientRect();
