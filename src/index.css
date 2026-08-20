@@ -23,7 +23,7 @@
 
   --bg-url: url('./assets/sun-bg.jpg');
   
-  --title-size: 7.5vw;
+  --title-size: 7vw;
   --title-padding: 2vh;
   font: 18px/145% var(--sans);
   letter-spacing: 0.18px;
