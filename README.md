@@ -1,5 +1,6 @@
 # [Doomlings Score Calculator](https://wolf-ex.github.io/doomlings-score-calculator/)
-An app that automatically calculates the score for the game [DOOMLINGS](https://www.doomlings.com/).
+An app that automatically calculates the score for the game [DOOMLINGS](https://www.doomlings.com/).  
+https://wolf-ex.github.io/doomlings-score-calculator/
 
 ## About
 When I received doomlings as a gift I loved the game, but not everyone enjoyed calculating their scores and would have me do it. 
