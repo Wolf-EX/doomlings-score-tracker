@@ -24,7 +24,17 @@ export default function App() {
   useEffect(() => {
     setPlayers([]);
     checkScore([], selectedCatastrophe);
+    
+    window.addEventListener('resize', resizeTraitList);
+    
+    return () => {
+      window.removeEventListener('resize', resizeTraitList);
+    }
   }, []);
+
+  useEffect(() => {
+      resizeTraitList();
+  }, [players.length]);
 
   useEffect(() => {
     // move this to function that selects catastrophe instead(updates after page redraws)
@@ -36,6 +46,15 @@ export default function App() {
   useEffect(() => {
     setTraitList(() => players.length > 0 ? getTraitPile() : []);
   }, [players, selectedPlayer, selectedPile, discardPile]);
+
+  function resizeTraitList(): void {
+    console.log("resizeTraitList");
+    const scrollWindow: HTMLElement | null = document.getElementById("scrollWindow");
+    if(scrollWindow) {
+      const rect = scrollWindow.getBoundingClientRect();
+      scrollWindow.style.height = `${(window.innerHeight - rect.y - 8).toString()}px`;
+    }
+  }
 
   function getTraitPile(): string[] {
     switch(selectedPile) {

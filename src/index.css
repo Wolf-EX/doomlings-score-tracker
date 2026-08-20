@@ -24,7 +24,7 @@
   --bg-url: url('./assets/sun-bg.jpg');
   
   --title-size: 7vw;
-  --title-padding: 2vh;
+  --title-padding: 0;
   font: 18px/145% var(--sans);
   letter-spacing: 0.18px;
   color-scheme: light dark;
@@ -38,57 +38,13 @@
   overflow: hidden;
   user-select: none;
   width: 100%;
- 
-  @media (max-aspect-ratio: .5) {
-    /* --bg: red; */
-    --title-padding: 1vh 0;
-    --scroll-window-height: 50dvh;
-    @media (max-height: 800px) {
-      --scroll-window-height: 46dvh;
-    }
-    @media (801px <= height <= 898px) {
-      --scroll-window-height: 48vh;
-    }
-    @media (899px <= height <= 932px) {
-      --scroll-window-height: 50vh;
-    }
-  }
-
-  @media (.5 <= aspect-ratio <= .65) {
-    /* --bg: blue; */
-    --title-padding: 1vh 0;
-    --scroll-window-height: 36dvh;
-  }
-
-  @media (.65 <= aspect-ratio <= .74) {
-    /* --bg: green; */
-    --title-size: 7vw;
-    --scroll-window-height: 50dvh;
-    @media (1181px <= height <= 1200px) {
-      --scroll-window-height: 52vh;
-    }
-    @media (min-height: 1250px) {
-      --scroll-window-height: 52vh;
-    }
-  }
-
-  @media (.74 <= aspect-ratio <= 1) {
-    /* --bg: purple; */
-    --scroll-window-height: 38dvh;
-    @media (721px <= height <= 1299px) {
-      --scroll-window-height: 48vh;
-    }
-    @media (min-height: 1300px) {
-      --scroll-window-height: 50vh;
-    }
-  }
-
+  
+  /* landscape aspect ratio */
   @media (min-aspect-ratio: 1) {
     /* --bg: yellow; */
     --title-size: 4vw;
     width: 60%;
     padding-inline: 20%;
-    --scroll-window-height: 40dvh;
   }
 }
 

@@ -8,7 +8,7 @@ type Props = {
 
 export default function CardList({traitList, removeFn}: Props) {
     return (
-        <ul className='scrollable'>
+        <ul id='scrollWindow' className='scrollable'>
         {
             traitList && traitList.map((traitId, index) => {
                 const traitName = traits.find(e => e.code === traitId.slice(0, 2))?.name;
