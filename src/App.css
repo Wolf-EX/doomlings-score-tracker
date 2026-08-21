@@ -11,15 +11,18 @@
 }
 
 .title {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: var(--title-size);
     color: transparent;
     background-image: var(--title);
     background-clip: text;
+    -webkit-background-clip: text; /* Safari/Chrome prefix */
     -webkit-text-stroke: 1px white;
     padding: var(--title-padding);
     font-size: var(--title-size);
     font-weight: bolder;
-    -webkit-background-clip: text; /* Safari/Chrome prefix */
 }
 
 .addtrait-container {
@@ -235,7 +238,7 @@
 }
 
 .add-player-popup-container {
-    background-color: var(--accent-bg);
+    background-color: var(--window-bg);
 }
 
 .add-player-popup-button-container {
