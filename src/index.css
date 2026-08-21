@@ -3,33 +3,34 @@
   --title: linear-gradient(to right, red, green, blue, purple);
   --text: #000000;
   --text-h: #08060d;
-  --bg: #c2d8ff;
+  --bg: linear-gradient(#fff700, #ff7300);
   --border: #e5e4e7;
-  --code-bg: #f4f3ec;
-  --accent: #ffc907;
+  --root-bg: #fbf4c6;
+  --accent: #ffb507;
   --accent-highlighted: #fff700ba;
   --accent-border: #c9a412e1;
   --accent-bg: #ff6e0de7;
   --delete-bg: #ffe32d;
-  --window-bg: #f4f3ecd9;
+  --window-bg: #ff6a00de;
   --selected: #ffff5a;
   --list-bg: #cbb267;
   --card-bg: #fac833;
   --card-border: #ffdd00;
+
+  --window-shadow: 2px 2px 15px 2px black;
   
   --sans: sans-serif, system-ui, 'Segoe UI', Roboto;
   --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
   --mono: ui-monospace, Consolas, monospace;
-
-  --bg-url: url('./assets/sun-bg.jpg');
   
   --title-size: 7vw;
   --title-padding: 0;
+
   font: 18px/145% var(--sans);
   letter-spacing: 0.18px;
   color-scheme: light dark;
   color: var(--text);
-  background: var(--bg);
+  background: var(--root-bg);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -41,7 +42,6 @@
   
   /* landscape aspect ratio */
   @media (min-aspect-ratio: 1) {
-    /* --bg: yellow; */
     --title-size: 4vw;
     width: 60%;
     padding-inline: 20%;
@@ -50,12 +50,11 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    /* --title: linear-gradient(to right, red, green, blue, purple); */
     --text: #eff2f7;
     --text-h: #f3f4f6;
-    /* --bg: #414766; */
+    --bg: #03156c;
     --border: #2e303a;
-    --code-bg: #1f2028;
+    --root-bg: #1f2028;
     --accent: #a250f5;
     --accent-highlighted: #8000ff;
     --accent-bg: #9122ffde;
@@ -68,14 +67,13 @@
     --card-bg: #9633fa;
     --card-border: #8000ff;
 
-    --bg-url: url('./assets/meaning_bg.png'); 
+    --bg-url: url('./assets/meaning_bg.png');
   }
 }
 
 #root {
   max-width: 100%;
   margin: 0;
-  background-color: var(--accent-bg); 
   text-align: center;
   border-inline: 1px solid var(--border);
   box-sizing: border-box;
@@ -83,6 +81,7 @@
 
 body {
   margin: 0;
+  background: var(--bg);
 }
 
 h1,
@@ -165,10 +164,10 @@ input:focus {
 
 .window {
   background-color: var(--window-bg);
+  box-shadow: var(--window-shadow);
   border: var(--window-border);
   border-radius: 0.2em;
   padding: 2vh;
-  /* z-index: 10; */
 }
 
 .window > h2 {

@@ -20,6 +20,8 @@ To add a trait, enter the trait name in the input bar and click "Add to traits",
 
 To set the catastrophe, click the "Catastrophe" button at the top.
 
+The scores will automatically be calulated and displayed on the player bar.
+
 #### Importing a player with a qr code
 - for the player being imported, once you added all your traits click the qr code icon on the player info bar that has your name and score.
 - for the player importing, click the add player button then the qr code icon and scan the qr code with your camera.  
@@ -31,8 +33,7 @@ _It might request permission to use the camera._
 - Improve landscape view layout.
 
 ## Credit
-- First DOOMLINGS, buy their game https://www.doomlings.com/collections/all-products. 
+- First DOOMLINGS! You can find their game at https://www.doomlings.com/collections/all-products. 
 <sub>_I also use some images from their site and can remove them if requested._</sub>  
-- I got the lightmode background image from Anton Kudryashov.  https://www.pexels.com/@anton-kudryashov-118639843/.  
 - For the qr code implementation, I use the [Html5-QRCode](https://github.com/mebjas/html5-qrcode) 
 and [react-qr-code](https://github.com/rosskhanas/react-qr-code#readme) libraries.
